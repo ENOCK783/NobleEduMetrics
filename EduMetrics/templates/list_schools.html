@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Schools by County</h2>
+{% for county in counties %}
+    <h3>{{ county.name }}</h3>
+    <ul>
+        {% for school in county.schools.all %}
+            <li>{{ school.name }} (Teachers: {{ school.num_teachers }}, Learners: {{ school.num_learners }})</li>
+        {% empty %}
+            <li>No schools in this county.</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Update School</h2>
+<form method="POST">
+    <label for="name">School Name:</label>
+    <input type="text" name="name" id="name" value="{{ school.name }}" required><br>
+
+    <label for="location">Location:</label>
+    <input type="text" name="location" id="location" value="{{ school.location }}" required><br>
+
+    <label for="teachers">Number of Teachers:</label>
+    <input type="number" name="teachers" id="teachers" value="{{ school.teachers }}" required><br>
+
+    <label for="students">Number of Students:</label>
+    <input type="number" name="students" id="students" value="{{ school.students }}" required><br>
+
+    <label for="renewable_energy">Renewable Energy (Yes/No):</label>
+    <input type="text" name="renewable_energy" id="renewable_energy" value="{{ school.renewable_energy }}"><br>
+
+    <label for="infrastructure">Infrastructure (Describe):</label>
+    <textarea name="infrastructure" id="infrastructure">{{ school.infrastructure }}</textarea><br>
+
+    <label for="cbc_ratio">CBC Ratio:</label>
+    <input type="text" name="cbc_ratio" id="cbc_ratio" value="{{ school.cbc_ratio }}"><br>
+
+    <button type="submit">Update School</button>
+</form>
+{% endblock %}

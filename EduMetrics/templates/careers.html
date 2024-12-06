@@ -1,0 +1,66 @@
+{%extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/urembo.css'%}">
+
+{#<header class="header">#}
+{#        <div class="container">#}
+{#            <h1 class="logo">NobleEduMetrics</h1>#}
+{#            <nav>#}
+{#                <ul class="nav-links">#}
+{#                    <li><a href="{% url 'home' %}">Home</a></li>#}
+{#                    <li><a href="{% url 'about' %}">About Us</a></li>#}
+{#                    <li><a href="{% url 'list_schools' %}">School list</a></li>#}
+{#                    <li><a href="{% url 'careers' %}" class="active">Careers</a></li>#}
+{#                    <li><a href="{% url 'contact' %}">Contact Us</a></li>#}
+{#                </ul>#}
+{#            </nav>#}
+{#        </div>#}
+{#    </header>#}
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Join Our Mission to Transform Education</h2>
+                <p>At NobleEduMetrics, we’re looking for passionate individuals ready to make an impact in the education sector.</p>
+            </div>
+        </section>
+
+        <section class="careers">
+            <h2>Current Opportunities</h2>
+            <div class="job-listings">
+                <div class="job-card">
+                    <h3>Data Analyst</h3>
+                    <p>Analyze school data to provide actionable insights that improve education systems.</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Software Developer</h3>
+                    <p>Design and build advanced tools to track and monitor school performance.</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Education Consultant</h3>
+                    <p>Collaborate with schools and policymakers to implement best practices for better outcomes.</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+
+                <div class="job-card">
+                    <h3>Renewable Energy Specialist</h3>
+                    <p>Promote sustainable energy solutions to improve school infrastructure.</p>
+                    <button class="apply-button">Apply Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 NobleEduMetrics. All Rights Reserved.</p>
+        </div>
+    </footer>
+{% endblock %}
